@@ -102,7 +102,8 @@ Answer: The notice appears on top of the content because its z-index is greater 
 
     Answer: In order to position the .notice box on the top right corner of the .content box, we need to adjust the top and left values of the .notice box to make it go lower and to the right. I made min 67px and 420 px, respectively. 
 
-    ```.content {
+    ```css
+    .content {
         background: lightyellow;
         width: 300px;
         height: 200px;
@@ -116,7 +117,8 @@ Answer: The notice appears on top of the content because its z-index is greater 
         background: orange;
         padding: 10px;
         z-index: 2; 
-        } ```
+        } 
+    ```
 
     
 
@@ -132,8 +134,16 @@ Answer: The notice appears on top of the content because its z-index is greater 
 
     a. Could you summarize the differences between the CSS position values (static, relative, absolute, fixed)? 
 
+    Answer: Static determines the default position, relative moves an element relative to its normal position. Absolute positions the element relative to its nearest positioned parent, while fixed is relative to the viewport
+
     b. How does absolute positioning depend on its parent element?
+
+    Answer: Absolute positioning depends on its parent element to define its positioning context.
 
     c. How do you differentiate sticky from fixed (you can research on sticky)?
 
+    Answer: Fixed always stays in the same spot on the screen even when you scroll, while sticky acts like relative at first then sticks to a position when you scroll past it.
+
     d. If you were designing a webpage for a school event, how might you use positioning to highlight important information? Please give concrete examples.
+
+    Answer: I can use CSS positioning to make important event details stand out and stay visible. I would use fixed positioning for a button so that it stays on the screen while scrolling. I can also use sticky positioning for headers so they stick to the top when you scroll. Lastly, I can use absolute positioning to place important badges inside event cards. This way, key information is easy to see and access.
