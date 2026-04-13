@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Transition and Animation Exercises</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Code to implement transform and transition">
+        <meta name="author" content="Sasha Meneses">
+        <meta name="revised" content="04/07/26">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+      * {
+        box-sizing: border-box;
+      }
+			#deck{
+				width: 50vw;
+				height: 50vh;
+				margin: 0 auto 110px;
+				border: 3px solid black;
+				padding: 40px;
+				position: relative;
+        top: 100px;
+			}
+			#deck div{
+				border: 3px solid black;
+				height: 30vh;
+				width: 20vw;
+				position: absolute;
+				top: 10vh;
+				left: 20vw;
+				background-color: white;
+        color: rgb(136, 0, 255);
+        font-size: 2em;
+        padding: 5px;
+        font-weight: bold;
+        transition: all 0.5s;
+			}
+			#deck:hover div:first-child{
+				transform: rotate(-45deg);
+				transform-origin: bottom left;
+			}
+			#deck:hover div:nth-child(2){
+				transform: rotate(-30deg);
+				transform-origin: bottom left;
+			}
+			#deck:hover div:nth-child(3){
+				transform: rotate(-15deg);
+				transform-origin: bottom left;
+			}
+			#deck:hover div:nth-child(5){
+				transform: rotate(15deg);
+				transform-origin: bottom left;
+			}
+			#deck div:hover{
+				border: 3px solid rgb(82, 154, 255);
+			}
+			#deck div:first-child:hover{
+				background-color: rgb(131, 49, 203);
+			}
+			#deck div:nth-child(2):hover{
+				background-color: rgb(126, 205, 255);
+			}
+			#deck div:nth-child(3):hover{
+				background-color: rgb(255, 77, 234);
+			}
+			#deck div:nth-child(4):hover{
+				background-color: rgb(18, 18, 119);
+
+      }
+      a {
+        text-decoration: none;
+      }
+      button {
+        display: block;
+        width: 25vw;
+        padding: 5px;
+        margin: 10px auto;
+      }
+		</style>
+	</head>
+	<body>
+		<div id="deck">
+			<div>🦄</div>
+			<div>🦭</div>
+			<div>🐶</div>
+            <div>🐍</div>
+		</div>
+    <a href="../index.html"><button> Click me for Home</button> </a>
+	</body>
+</html>
